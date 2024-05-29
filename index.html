@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="1550654650e4e433c1b4db47718eae4c.jpg">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="py-5">
+        <div class="container">
+            <h1 class="mb-4 text-center">Bookmarker</h1>
+            <div class="form py-5 border-top border-bottom">
+                <h2 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                <div class="mb-4">
+                    <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                    <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+                    <div id="siteName" class="invalid-feedback">
+                        please enter a valid site name
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="siteUrl" class="form-label"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+                    <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+                    <div id="siteUrl" class="invalid-feedback">
+                        please enter a valid URL starts with http or https 
+                    </div>
+                </div>
+                <div class="text-center">
+                <button class="btn px-5" disabled value="submit" id="addSite">Submit</button>
+                </div>
+            </div>
+            <div class="wrapper py-5">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Index</th>
+                            <th scope="col">Website Name</th>
+                            <th scope="col">Visit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sitePlace">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- start footer section -->
+    <footer class="text-center py-2">
+        <p class="text-white">Coded By <a href="https://www.linkedin.com" class="text-decoration-none text-white">Ahmed Abo Elwafa</a></p>
+        <div class="d-flex justify-content-center mt-2">
+            <div class="btns"><a href="https://github.com/Aboelwafa2936" target="_blank"><i class="fa-brands fa-github-alt"></i></a></div>
+            <div class="btns"><a href="https://www.linkedin.com/in/ahmed-abo-el-wafa-121b49255/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+            <div class="btns"><a href="https://wa.me/+201140031203" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+            <div class="btns"><a href="mailto:aboelwafaa213@gmail.com" target="_blank"><i class="fa-regular fa-message"></i></a></div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

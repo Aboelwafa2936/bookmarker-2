@@ -1,0 +1,152 @@
+:root{
+    --main-color: #051048; 
+    --background-color: #F7ECDE; 
+    --bs-border-style: dotted; 
+}
+div.form{
+    --bs-border-width: var(--border-width);
+    --border-width: 5px;
+}
+
+.form-control{
+    --bs-border-width: 1px;
+}
+/* Styling for text selection */
+*::selection{
+    background-color: var(--main-color);
+}
+
+/* Styling for the body element */
+body{
+    background: linear-gradient(to right, #74ebd5, #ACB6E5); 
+    font-family: "PT Sans Caption";
+}
+
+/* Styling for the main heading (h1) */
+h1{
+    color: #f5f5f5; 
+    font-size: 50px; 
+    font-family: Pacifico;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+h1::after,
+footer p::after{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(to right , var(--main-color), #3c4a94);
+    z-index: -1;
+    transition: all 0.5s ease-in;
+    border-radius: 8px;
+}
+h1:hover::after{
+    height: 40px; 
+}
+
+/* Styling for the secondary heading (h2) */
+h2{
+    font-size: 25px;
+    font-family: Righteous; 
+    background-image: linear-gradient(to right , var(--main-color), #596399);
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+/* Styling for form controls */
+.form-control{
+    outline: none;
+    &:focus{
+        border-color: var(--main-color);
+        box-shadow: 0px 0px 8px 1px var(--main-color); 
+    }
+}
+
+/* Styling for labels */
+label{
+    font-weight: 600; 
+}
+
+/* Styling for buttons with class 'px-5' */
+.px-5{
+    font-size: 18px;
+    font-weight: 600; 
+}
+
+/* Styling for disabled buttons */
+.btn.disabled, .btn:disabled, fieldset:disabled .btn{
+    background-color: #f5f5f5; 
+    color: var(--main-color); 
+    border: none;
+}
+
+/* Styling for enabled buttons with class 'px-5' */
+.px-5:not(:disabled){
+    background-color: var(--main-color); 
+    color: #fff;
+}
+
+/* Custom class for 'see' buttons */
+.btn-see{
+    background-color: var(--main-color); 
+    &:hover{
+        background-color: #1f226b; 
+    }
+}
+/* Styling for footer */
+
+footer p{
+    font-family: Pacifico;
+    position: relative;
+    display: inline;
+    font-size: 1.1rem;
+}
+
+footer  .btns{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 5px 15px -5px #00000070;
+    border-radius: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .btns a i{
+    color: #1B1A55;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .btns:hover i{
+    transform: scale(1.3) translate(-10px, -10px);
+    color: #f1f1f1;
+    transition: 0.4s linear;
+}
+
+footer .btns::before{
+    content: "";
+    width: 120%;
+    height: 120%;
+    background-color: #535C91;
+    position: absolute;
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
+}
+
+footer .btns:hover::before{
+    top: -10%;
+    left: -10%;
+    transition: 0.4s linear;
+}
